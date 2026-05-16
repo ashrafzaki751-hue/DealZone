@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة عروض DealZone | مراجعات ونصائح الشراء</title>
+    <meta name="description" content="أفضل مراجعات المنتجات، الهواتف الاقتصادية، والأجهزة المنزلية في مصر. دليلك الشامل للشراء الذكي والتوفير.">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_v3.css">
+    <style>
+        .blog-container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+        .blog-header { text-align: center; margin-bottom: 50px; }
+        .blog-header h1 { font-size: 2.5rem; color: var(--primary-color); }
+        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; display: flex; flex-wrap: wrap; transition: 0.3s; }
+        .article-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .article-img { width: 350px; height: 250px; object-fit: cover; }
+        .article-content { padding: 30px; flex: 1; min-width: 300px; }
+        .article-tag { background: #fee2e2; color: #ef4444; padding: 5px 12px; border-radius: 20px; font-size: 13px; font-weight: bold; margin-bottom: 15px; display: inline-block; }
+        .article-content h2 { font-size: 1.8rem; margin-top: 0; color: #1f2937; margin-bottom: 15px; }
+        .article-content p { color: #4b5563; line-height: 1.7; margin-bottom: 20px; }
+        .read-more { background: var(--primary-color); color: white; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; }
+        
+        /* Article Page Styles */
+        .full-article { display: none; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .full-article h1 { color: #1f2937; font-size: 2.2rem; }
+        .full-article img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin: 20px 0; }
+        .full-article h3 { color: var(--primary-color); font-size: 1.5rem; margin-top: 30px; }
+        .full-article p { font-size: 1.1rem; line-height: 1.8; color: #374151; }
+        .buy-now-btn { display: block; width: 100%; text-align: center; background: #ef4444; color: white; padding: 15px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 12px; margin-top: 30px; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        .back-btn { background: #e5e7eb; color: #374151; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 20px; cursor: pointer; border: none; font-family: 'Tajawal'; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DealZone <span>Blog</span></div>
+        <a href="index.html" class="back-btn" style="margin:0;">العودة للمتجر الرئيسي</a>
+    </header>
+
+    <div class="blog-container">
+        
+        <div id="blog-list">
+            <div class="blog-header">
+                <h1>دليلك للشراء الذكي والتوفير 🛒</h1>
+                <p>مراجعات، مقارنات، ونصائح حصرية لاختيار أفضل المنتجات بأرخص الأسعار</p>
+            </div>
+
+            <!-- Article 1 -->
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600" class="article-img">
+                <div class="article-content">
+                    <span class="article-tag">موبايلات وإلكترونيات</span>
+                    <h2>أفضل موبايل اقتصادي في مصر 2024 (بميزانية تحت 8000 جنيه)</h2>
+                    <p>في ظل ارتفاع الأسعار، أصبح البحث عن هاتف يجمع بين الأداء القوي والسعر المناسب تحدياً كبيراً. قمنا بمراجعة السوق المصري ووجدنا أن Xiaomi Redmi 15C يتربع على العرش بلا منازع. اكتشف الأسباب وعيوب ومميزات هذا الهاتف الساحر.</p>
+                    <button class="read-more" onclick="showArticle('article1')">اقرأ المراجعة كاملة</button>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7bef31a?w=600" class="article-img">
+                <div class="article-content">
+                    <span class="article-tag">أجهزة منزلية</span>
+                    <h2>هل القلاية الهوائية (Air Fryer) تستحق الشراء؟ الدليل الشامل</h2>
+                    <p>الكثير من السيدات يتساءلن إذا كانت القلاية الهوائية مجرد رفاهية أم ضرورة في المطبخ الحديث. في هذه المقالة نكشف لكم تجربتنا الكاملة مع قلاية فيليبس Essential، وكيف توفر في استهلاك الزيت وتضمن صحة عائلتك.</p>
+                    <button class="read-more" onclick="showArticle('article2')">اقرأ المراجعة كاملة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Article 1 -->
+        <div id="article1" class="full-article">
+            <button class="back-btn" onclick="showList()">&rarr; العودة للمقالات</button>
+            <span class="article-tag">موبايلات وإلكترونيات</span>
+            <h1>أفضل موبايل اقتصادي في مصر 2024 (بميزانية تحت 8000 جنيه)</h1>
+            <p>بقلم: خبراء DealZone | وقت القراءة: 3 دقائق</p>
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1000">
+            
+            <h3>لماذا شاومي ريدمي 15C؟</h3>
+            <p>بعد تجربة أكثر من 10 هواتف في نفس الفئة السعرية، أثبت هاتف Xiaomi Redmi 15C أنه يقدم أفضل قيمة مقابل سعر. الهاتف يأتي بذاكرة ضخمة 256 جيجابايت ورامات 8 جيجابايت، مما يعني أنك لن تواجه أي بطء في الاستخدام اليومي أو الألعاب الخفيفة.</p>
+            
+            <h3>المميزات القاتلة:</h3>
+            <ul>
+                <li>بطارية 5000 مللي أمبير تدوم ليومين من الاستخدام.</li>
+                <li>شاشة كبيرة وواضحة جداً لمشاهدة الفيديوهات.</li>
+                <li>تصميم أنيق جداً لا يوحي أبداً بأنه هاتف اقتصادي.</li>
+            </ul>
+
+            <h3>أين تجده بأرخص سعر؟</h3>
+            <p>بدلاً من شراءه من المحلات بأسعار مبالغ فيها تصل إلى 9500 جنيه، وجدنا لك عرضاً حصرياً وموثوقاً على <strong>أمازون مصر</strong> بسعر 7,999 جنيه فقط مع ضمان الاسترجاع المجاني والتوصيل السريع.</p>
+
+            <a href="https://www.amazon.eg/dp/B0FNNDQG1T/?tag=ashraf0b6-20" target="_blank" class="buy-now-btn">🛒 اطلب Xiaomi Redmi 15C الآن بخصم خاص</a>
+        </div>
+
+        <!-- Full Article 2 -->
+        <div id="article2" class="full-article">
+            <button class="back-btn" onclick="showList()">&rarr; العودة للمقالات</button>
+            <span class="article-tag">أجهزة منزلية</span>
+            <h1>هل القلاية الهوائية تستحق الشراء؟ دليلك لاختيار قلاية فيليبس</h1>
+            <p>بقلم: خبراء DealZone | وقت القراءة: 4 دقائق</p>
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7bef31a?w=1000">
+            
+            <h3>صحة عائلتك أولاً</h3>
+            <p>قلاية Philips Essential Air Fryer XL حجم 6.2 لتر ليست مجرد جهاز للطبخ، بل هي استثمار في صحة عائلتك. تقنية الهواء الساخن السريع (Rapid Air) تضمن لك طعاماً مقرمشاً من الخارج وطرياً من الداخل باستخدام ملعقة زيت واحدة فقط أو بدون زيت نهائياً!</p>
+            
+            <h3>لماذا هذا الإصدار بالتحديد؟</h3>
+            <p>الحجم الكبير (XL) يكفي لطبخ وجبة كاملة لـ 4 أشخاص في مرة واحدة. كما أن الشاشة الرقمية توفر برامج طبخ جاهزة بضغطة زر. تنظيفها سهل جداً ويمكن غسل الدرج في غسالة الأطباق.</p>
+
+            <h3>مقارنة الأسعار في السوق المصري:</h3>
+            <p>السعر المعتاد لهذه القلاية في المعارض يتجاوز 8,500 جنيه مصري، ولكن من خلال رصدنا المستمر للأسعار، تمكنا من التقاط عرض حرق أسعار على أمازون.</p>
+
+            <a href="https://www.amazon.eg/dp/B08YRP97F9/?tag=ashraf0b6-20" target="_blank" class="buy-now-btn">🛒 اطلب قلاية فيليبس XL الآن ووفر أكثر من 1100 جنيه!</a>
+        </div>
+
+    </div>
+
+    <script>
+        function showArticle(id) {
+            document.getElementById('blog-list').style.display = 'none';
+            document.getElementById('article1').style.display = 'none';
+            document.getElementById('article2').style.display = 'none';
+            document.getElementById(id).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showList() {
+            document.getElementById('blog-list').style.display = 'block';
+            document.getElementById('article1').style.display = 'none';
+            document.getElementById('article2').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

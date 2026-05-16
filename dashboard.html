@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealZone Admin | لوحة التحكم الاحترافية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --card: #ffffff;
+            --accent: #f59e0b;
+        }
+        body { font-family: 'Tajawal', sans-serif; background: #f1f5f9; margin: 0; padding: 0; color: var(--dark); }
+        .sidebar { width: 260px; height: 100vh; background: var(--dark); color: white; position: fixed; right: 0; top: 0; padding: 2rem 1rem; }
+        .main-content { margin-right: 260px; padding: 2rem; }
+        .logo { font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 3rem; text-align: center; }
+        .logo span { color: var(--primary); }
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .stat-card { background: var(--card); padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-right: 5px solid var(--primary); }
+        .stat-card h3 { margin: 0; font-size: 0.9rem; color: #64748b; }
+        .stat-card .value { font-size: 2rem; font-weight: 700; margin: 0.5rem 0; color: var(--dark); }
+        .stat-card.profit { border-right-color: var(--secondary); }
+        .chart-container { background: var(--card); padding: 2rem; border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .live-radar { position: relative; height: 300px; background: #1e293b; border-radius: 1rem; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-weight: bold; }
+        .radar-circle { position: absolute; width: 200px; height: 200px; border: 2px solid rgba(16, 185, 129, 0.2); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(0.5); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+        .nav-item { padding: 1rem; border-radius: 0.5rem; cursor: pointer; transition: 0.3s; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px; }
+        .nav-item:hover { background: rgba(255,255,255,0.1); }
+        .nav-item.active { background: var(--primary); }
+    </style>
+</head>
+<body>
+    <!-- Login Overlay -->
+    <div id="login-overlay" style="position: fixed; inset: 0; background: var(--dark); z-index: 10000; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+        <div style="background: rgba(255,255,255,0.05); padding: 3rem; border-radius: 1.5rem; border: 1px solid rgba(255,255,255,0.1); width: 350px;">
+            <div style="font-size: 2rem; font-weight: 900; margin-bottom: 2rem;">Deal<span>Zone</span> Auth</div>
+            <input type="text" id="username" placeholder="اسم المستخدم" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 0.5rem; border: none; background: #1e293b; color: white;">
+            <input type="password" id="password" placeholder="كلمة المرور" style="width: 100%; padding: 1rem; margin-bottom: 1.5rem; border-radius: 0.5rem; border: none; background: #1e293b; color: white;">
+            <button onclick="checkAuth()" style="width: 100%; padding: 1rem; border-radius: 0.5rem; border: none; background: var(--primary); color: white; font-weight: 700; cursor: pointer;">دخول لوحة التحكم 🚀</button>
+            <p id="auth-error" style="color: #ef4444; margin-top: 1rem; font-size: 0.9rem; display: none;">بيانات الدخول غير صحيحة! ❌</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">Deal<span>Zone</span> Admin</div>
+        <div class="nav-item active">📊 الإحصائيات العامة</div>
+        <div class="nav-item">🌐 خريطة الزوار</div>
+        <div class="nav-item">📈 الأرباح المقدرة</div>
+        <div class="nav-item">⚙️ الإعدادات</div>
+    </div>
+
+    <div class="main-content">
+        <h1 style="margin-bottom: 2rem;">مرحباً بك، أشرف! 👋</h1>
+        
+        <div class="stat-grid">
+            <div class="stat-card">
+                <h3>إجمالي الزيارات</h3>
+                <div class="value" id="total-visits">15,420</div>
+                <div style="color: var(--secondary); font-size: 0.8rem;">↑ 12% منذ الأمس</div>
+            </div>
+            <div class="stat-card">
+                <h3>إجمالي النقرات</h3>
+                <div class="value" id="total-clicks">3,290</div>
+                <div style="color: var(--secondary); font-size: 0.8rem;">↑ 8% منذ الأمس</div>
+            </div>
+            <div class="stat-card profit">
+                <h3>الأرباح التقديرية (اليوم)</h3>
+                <div class="value" id="est-profit">$48.50</div>
+                <div style="color: var(--accent); font-size: 0.8rem;">الهدف اليومي: $100</div>
+            </div>
+            <div class="stat-card">
+                <h3>معدل التحويل</h3>
+                <div class="value">15.4%</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2 style="margin-top: 0;">رادار الزوار اللحظي 🛰️</h2>
+            <div class="live-radar" id="radar">
+                <div class="radar-circle"></div>
+                جاري تتبع الزوار من: <span id="current-location" style="margin-right: 5px;">القاهرة...</span>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+            <div class="chart-container" style="margin-bottom: 0;">
+                <h2>أفضل الأقسام أداءً</h2>
+                <ul id="top-cats" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+                        <span>💻 إلكترونيات</span>
+                        <span style="font-weight: bold; color: var(--primary);">45%</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+                        <span>👕 ملابس وأزياء</span>
+                        <span style="font-weight: bold; color: var(--primary);">22%</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+                        <span>✨ عطور وتجميل</span>
+                        <span style="font-weight: bold; color: var(--primary);">18%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="chart-container" style="margin-bottom: 0;">
+                <h2>تنبيهات النظام</h2>
+                <div style="padding: 1rem; background: #ecfdf5; border-radius: 0.5rem; color: #065f46; margin-bottom: 1rem;">✅ ملف ads.txt يعمل بنجاح</div>
+                <div style="padding: 1rem; background: #fffbeb; border-radius: 0.5rem; color: #92400e;">⚠️ جوجل بدأ في أرشفة 12 صفحة جديدة</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="database_v3.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
