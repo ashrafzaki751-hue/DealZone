@@ -1,0 +1,37 @@
+name: 🤖 Auto-Update DealZone
+
+on:
+  schedule:
+    - cron: '0 6,12,18,0 * * *'   # Runs 4× daily: 6am, 12pm, 6pm, midnight UTC
+  workflow_dispatch:                # Also allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-deals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 🔄 Run Auto-Refresh Script
+        run: node scripts/auto_refresh.js
+
+      - name: 📤 Commit & Deploy
+        run: |
+          git config user.name  "DealZone Bot 🤖"
+          git config user.email "bot@dealzone.app"
+          git add database_v3.js
+          if git diff --staged --quiet; then
+            echo "✅ No changes — deals are still fresh."
+          else
+            git commit -m "🤖 Auto-refresh: Updated deals at $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "🚀 Deployed to GitHub Pages!"
+          fi

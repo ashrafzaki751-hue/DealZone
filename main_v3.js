@@ -149,6 +149,14 @@ function renderSkeletons() {
     }
 }
 
+// --- Image Proxy (Fix Amazon/Noon Hotlink Blocking via wsrv.nl) ---
+function proxyImg(url) {
+    if (!url) return 'https://placehold.co/400x400?text=DealZone';
+    if (url.includes('wsrv.nl') || url.includes('unsplash') || url.includes('placehold')) return url;
+    const clean = url.replace(/^https?:\/\//, '');
+    return `https://wsrv.nl/?url=${clean}&w=400&h=400&fit=contain&bg=white&q=80`;
+}
+
 function renderDeals(append = false) {
     if (!window.DB) return;
     const t = translations[currentLang];
@@ -195,7 +203,7 @@ function renderDeals(append = false) {
             <div class="deal-image-container">
                 <div class="deal-badge">${t.discount} ${discountPct}% 🔥</div>
                 <div style="position: absolute; top: 10px; left: 10px; font-size: 1.5rem; background: var(--glass-bg); border-radius: 50%; padding: 2px;">${deal.flag}</div>
-                <img src="${deal.image}" alt="${deal.title}" class="deal-image">
+                <img src="${proxyImg(deal.image)}" alt="${deal.title}" class="deal-image" loading="lazy" onerror="this.src='https://placehold.co/400x400?text=No+Image'">
                 <div class="store-badge">${deal.storeIcon} ${deal.store}</div>
             </div>
             <div class="deal-info">
