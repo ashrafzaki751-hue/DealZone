@@ -153,8 +153,8 @@ function renderSkeletons() {
 function proxyImg(url) {
     if (!url) return 'https://placehold.co/400x400?text=DealZone';
     if (url.includes('unsplash') || url.includes('placehold')) return url;
-    // Bypassing Amazon/Noon hotlink protection using AllOrigins raw proxy
-    return `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    // Bypassing Amazon/Noon hotlink protection using CodeTabs proxy
+    return `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`;
 }
 
 function renderDeals(append = false) {
