@@ -223,7 +223,7 @@ function renderDeals(append = false) {
                         <span class="new-price">${(deal.newPrice || 0).toFixed(2)} ${deal.currency || '$'}</span>
                     </div>
                 </div>
-                <button class="btn btn-store w-100" onclick="goToDeal(${deal.id})">${t.get_deal}</button>
+                <button class="btn btn-store w-100" onclick="goToDeal('${deal.id}')">${t.get_deal}</button>
             </div>
         `;
         productGrid.appendChild(card);
