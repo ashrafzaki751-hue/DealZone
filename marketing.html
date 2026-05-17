@@ -66,8 +66,7 @@
 
         function renderMarketingDashboard() {
             const grid = document.getElementById('marketing-grid');
-            // Show only the authentic deals for marketing
-            const dealsToPromote = realDeals; 
+            const dealsToPromote = window.DB ? window.DB.getDeals() : []; 
             
             dealsToPromote.forEach(deal => {
                 const postText = generatePostText(deal);
