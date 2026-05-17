@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Marketing Generator</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        /* TikTok 9:16 aspect ratio container */
+        .tiktok-container { width: 400px; height: 711px; background: linear-gradient(135deg, #1f2937, #000); position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+        .product-img { width: 100%; height: 50%; object-fit: cover; border-bottom: 5px solid #ef4444; }
+        .content { padding: 20px; text-align: center; }
+        .title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; color: #fbbf24; }
+        .discount-badge { position: absolute; top: 20px; right: 20px; background: #ef4444; color: white; padding: 10px 20px; border-radius: 30px; font-weight: bold; font-size: 1.2rem; transform: rotate(15deg); animation: pulse 1s infinite alternate; }
+        .price-container { margin-top: 15px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 15px; backdrop-filter: blur(5px); }
+        .old-price { text-decoration: line-through; color: #9ca3af; font-size: 1.2rem; }
+        .new-price { font-size: 2rem; color: #10b981; font-weight: 900; }
+        .cta { margin-top: 25px; background: linear-gradient(90deg, #ef4444, #f97316); color: white; padding: 15px; border-radius: 30px; font-size: 1.3rem; font-weight: bold; width: 80%; margin-left: auto; margin-right: auto; animation: bounce 2s infinite; }
+        .link-text { margin-top: 15px; font-size: 0.9rem; color: #9ca3af; }
+        
+        @keyframes pulse { from { transform: scale(1) rotate(15deg); } to { transform: scale(1.1) rotate(15deg); } }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-20px);} 60% {transform: translateY(-10px);} }
+        
+        .controls { position: fixed; top: 20px; left: 20px; background: white; padding: 15px; border-radius: 10px; z-index: 100; color: black; display: flex; flex-direction: column; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <h3>مُولد فيديوهات تيك توك 🤖</h3>
+        <p style="font-size: 12px; max-width: 200px;">1. اضغط "المنتج التالي".<br>2. شغل تسجيل الشاشة في هاتفك لمدة 5 ثوانٍ.<br>3. ارفع الفيديو على تيك توك مع أغنية تريند واكتب رابط الموقع في البايو!</p>
+        <button onclick="nextDeal()" style="padding: 10px; background: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer;">المنتج التالي ⏭️</button>
+    </div>
+
+    <div class="tiktok-container">
+        <div class="discount-badge" id="tk-discount">خصم 50%</div>
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&q=80" id="tk-img" class="product-img" alt="Product">
+        <div class="content">
+            <div class="title" id="tk-title">Apple iPhone 15 (128GB)</div>
+            <div class="price-container">
+                <div class="old-price" id="tk-old">51999 ج.م</div>
+                <div class="new-price" id="tk-new">47277 ج.م</div>
+            </div>
+            <div class="cta">🔗 الرابط في البايو!</div>
+            <div class="link-text">DealZoneEg.com</div>
+        </div>
+    </div>
+
+    <script src="database_v3.js"></script>
+    <script>
+        let currentIdx = 0;
+        let deals = [];
+        
+        setTimeout(() => {
+            if (window.DB && window.DB.getDeals) {
+                deals = window.DB.getDeals();
+                showDeal(0);
+            }
+        }, 500);
+
+        function showDeal(idx) {
+            if (!deals || deals.length === 0) return;
+            const deal = deals[idx];
+            const discount = Math.round(((deal.oldPrice - deal.newPrice) / deal.oldPrice) * 100);
+            
+            document.getElementById('tk-img').src = deal.image;
+            document.getElementById('tk-title').innerText = deal.title;
+            document.getElementById('tk-old').innerText = deal.oldPrice + ' ' + deal.currency;
+            document.getElementById('tk-new').innerText = deal.newPrice + ' ' + deal.currency;
+            document.getElementById('tk-discount').innerText = `خصم ${discount}% 🔥`;
+        }
+
+        function nextDeal() {
+            currentIdx++;
+            if (currentIdx >= deals.length) currentIdx = 0;
+            showDeal(currentIdx);
+        }
+    </script>
+</body>
+</html>
