@@ -59,7 +59,7 @@ const themeToggle = document.getElementById('theme-toggle');
 
 // --- Initialization ---
 function init() {
-    if (window.DB) window.DB.recordVisit();
+    if (window.DB && typeof window.DB.recordVisit === 'function') window.DB.recordVisit();
     setupTheme();
     setupLanguage();
     setupFilters();
