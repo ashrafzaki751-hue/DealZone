@@ -152,11 +152,9 @@ function renderSkeletons() {
 // --- Image Handling (Bypass CDN Proxy Blocks) ---
 function proxyImg(url) {
     if (!url) return 'https://placehold.co/400x400?text=DealZone';
-    // Amazon, Noon, and AliExpress block wsrv.nl proxy. Use direct URL with referrerpolicy in HTML.
-    if (url.includes('amazon') || url.includes('noon') || url.includes('alicdn')) return url;
-    if (url.includes('wsrv.nl') || url.includes('unsplash') || url.includes('placehold')) return url;
-    const clean = url.replace(/^https?:\/\//, '');
-    return `https://wsrv.nl/?url=${clean}&w=400&h=400&fit=contain&bg=white&q=80`;
+    if (url.includes('unsplash') || url.includes('placehold')) return url;
+    // Bypassing Amazon/Noon hotlink protection using AllOrigins raw proxy
+    return `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
 }
 
 function renderDeals(append = false) {
