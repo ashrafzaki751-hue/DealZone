@@ -1,0 +1,40 @@
+name: DealZone Auto-Scraper & Live Deploy
+
+on:
+  schedule:
+    # Runs automatically every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab at any time
+
+permissions:
+  contents: write # Grants the workflow permission to commit and push changes
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: ⏳ Run Dynamic Scraper & Price Engine
+      run: node scripts/auto_scraper.js
+
+    - name: 📤 Commit & Push Updated Database
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add database_v3.js deals_catalog.json
+        
+        # Only commit and push if there are actual changes to prevent empty commit loops
+        if git diff --staged --quiet; then
+          echo "No changes in database, skipping push."
+        else
+          git commit -m "🤖 Cloud-Bot: Dynamic price scraping & catalog sync [Scheduled]"
+          git push origin main
+        fi
