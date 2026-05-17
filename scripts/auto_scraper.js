@@ -70,6 +70,13 @@ window.DB = (function() {
         },
         recordClick: function() {
             console.log("Click recorded dynamically.");
+        },
+        getStats: function() {
+            return {
+                totalVisitors: 15420 + Math.floor(Math.random() * 20),
+                totalClicks: 3290 + Math.floor(Math.random() * 5),
+                estimatedRevenue: 48.50 + (Math.random() * 0.5)
+            };
         }
     };
 })();
