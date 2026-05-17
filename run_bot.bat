@@ -4,7 +4,7 @@ echo ===================================================
 echo 🤖 DealZone Auto-Scraper and Deploy Bot
 echo ===================================================
 echo.
-echo ⏳ 1. Running Dynamic Scraper & Updating Database...
+echo ⏳ 1. Running Dynamic Scraper and Updating Database...
 node scripts/auto_scraper.js
 
 echo.
