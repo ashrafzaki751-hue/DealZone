@@ -1,16 +1,16 @@
 @echo off
-title DealZone Auto-Bot 🤖
+title DealZone Auto-Scraper Bot 🤖
 echo ===================================================
-echo 🤖 DealZone Auto-Refresh and Deploy Bot
+echo 🤖 DealZone Auto-Scraper and Deploy Bot
 echo ===================================================
 echo.
-echo ⏳ 1. Updating deals database and resetting timers...
-node scripts/auto_refresh.js
+echo ⏳ 1. Running Dynamic Scraper & Updating Database...
+node scripts/auto_scraper.js
 
 echo.
 echo 📤 2. Uploading fresh data to GitHub Pages...
-git add database_v3.js deals_catalog.json main_v3.js index.html run_bot.bat
-git commit -m "🤖 Auto-Bot: Full system update & bug fixes"
+git add database_v3.js deals_catalog.json main_v3.js index.html run_bot.bat scripts/auto_scraper.js
+git commit -m "🤖 Auto-Bot: Dynamic price scraping & catalog expansion (38 deals)"
 git push origin main
 
 echo.
