@@ -77,6 +77,9 @@ const realDeals = [
         location: "global",
         flag: "🌐",
         link: "https://s.click.aliexpress.com/e/_c4lCeRjl",
+        expiresAt: getFutureTime(72),
+        isHot: true,
+        savingNote: "خصم 50% على AliExpress!"
     },
     {
         id: "budget_1_joyroom",
