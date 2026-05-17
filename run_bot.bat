@@ -1,31 +1,20 @@
 @echo off
-color 0a
-title DealZone Scraper Bot - تحديث العروض التلقائي
+title DealZone Auto-Bot 🤖
 echo ===================================================
-echo 🤖 DealZone Scraper Bot - أداة التحديث التلقائي
+echo 🤖 DealZone Auto-Refresh and Deploy Bot
 echo ===================================================
+echo.
+echo ⏳ 1. Updating deals database and resetting timers...
+node scripts/auto_refresh.js
 
-:: Check if Node.js is installed
-node -v >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [خطأ] Node.js غير مثبت على جهازك!
-    echo يجب تحميل وتثبيت Node.js من الموقع الرسمي: https://nodejs.org
-    echo بعد التثبيت، أعد تشغيل هذا الملف.
-    pause
-    exit /b
-)
+echo.
+echo 📤 2. Uploading fresh data to GitHub Pages...
+git add database_v3.js deals_catalog.json main_v3.js index.html run_bot.bat
+git commit -m "🤖 Auto-Bot: Full system update & bug fixes"
+git push origin main
 
-echo [1] جاري التحقق من المكاتب المطلوبة (Axios, Cheerio)...
-if not exist "node_modules\axios" (
-    echo جاري تثبيت المكاتب لأول مرة... قد يستغرق دقيقة.
-    call npm install axios cheerio
-)
-
-echo [2] جاري تشغيل الروبوت لسحب العروض الحقيقية من أمازون...
-node deal_bot.js
-
+echo.
 echo ===================================================
-echo ✅ العملية اكتملت! 
-echo تأكد من تشغيل ملف sync_dealzone.bat لرفع العروض الجديدة لموقعك.
+echo ✅ SUCCESS! Website is updated and LIVE.
 echo ===================================================
 pause

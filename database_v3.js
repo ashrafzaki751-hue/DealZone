@@ -23,7 +23,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.noon.com/egypt-ar/iphone-15-128gb-blue/N53433265A/p/?utm_source=C1000264L&utm_medium=referral",
-        "expiresAt": 1779198845723,
+        "expiresAt": 1779209686293,
         "isHot": true,
         "savingNote": "أرخص سعر في مصر حالياً!"
     },
@@ -41,7 +41,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/dp/B08YRP97F9/?tag=ashraf0b6-20",
-        "expiresAt": 1779256445723,
+        "expiresAt": 1779335686293,
         "isHot": true,
         "savingNote": "وفر 1,115 ج.م عن نون!"
     },
@@ -59,7 +59,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/dp/B0FNNDQG1T/?tag=ashraf0b6-20",
-        "expiresAt": 1779130445723,
+        "expiresAt": 1779094486293,
         "isHot": true,
         "savingNote": "لقطة بخصم حقيقي من أمازون"
     },
@@ -77,7 +77,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Samsung+Galaxy+A55+5G&tag=ashraf0b6-20",
-        "expiresAt": 1779173645723,
+        "expiresAt": 1779137686293,
         "isHot": true,
         "savingNote": "توفير 3,500 جنيه وشحن مجاني!"
     },
@@ -95,7 +95,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Anker+65W+GaN+Charger&tag=ashraf0b6-20",
-        "expiresAt": 1779162845723,
+        "expiresAt": 1779227686293,
         "isHot": true,
         "savingNote": "شاحن واحد لكل أجهزتك!"
     },
@@ -113,7 +113,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.noon.com/egypt-ar/search/?q=Hisense+55+4K&utm_source=C1000264L",
-        "expiresAt": 1779242045723,
+        "expiresAt": 1779263686293,
         "isHot": true,
         "savingNote": "وفر 2,500 جنيه على شاشة 55 بوصة!"
     },
@@ -131,7 +131,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Joyroom+JR-T03S+Pro&tag=ashraf0b6-20",
-        "expiresAt": 1779126845723,
+        "expiresAt": 1779119686293,
         "isHot": true,
         "savingNote": "الأكثر مبيعاً! خصم حقيقي"
     },
@@ -149,7 +149,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=T500+Smart+Watch&tag=ashraf0b6-20",
-        "expiresAt": 1779065645723,
+        "expiresAt": 1779072886293,
         "isHot": true,
         "savingNote": "عرض فلاش ⚡ باقي كمية محدودة"
     },
@@ -167,7 +167,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.noon.com/egypt-ar/search/?q=Xiaomi+Power+Bank+10000mAh&utm_source=C1000264L",
-        "expiresAt": 1779234845723,
+        "expiresAt": 1779234886293,
         "isHot": false,
         "savingNote": "أساسي لكل موبايل"
     },
@@ -185,7 +185,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Philips+Hair+Clipper+HC3505&tag=ashraf0b6-20",
-        "expiresAt": 1779342845723,
+        "expiresAt": 1779310486293,
         "isHot": false,
         "savingNote": "أرخص سعر في مصر"
     },
@@ -203,7 +203,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Digital+Kitchen+Scale+10Kg&tag=ashraf0b6-20",
-        "expiresAt": 1779108845723,
+        "expiresAt": 1779126886293,
         "isHot": true,
         "savingNote": "حرق أسعار حرفياً!"
     },
@@ -221,7 +221,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Kenwood+Food+Processor&tag=ashraf0b6-20",
-        "expiresAt": 1779188045723,
+        "expiresAt": 1779177286293,
         "isHot": true,
         "savingNote": "الخلاط الأكتر طلباً للعرائس"
     },
@@ -239,7 +239,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Neoflam+Fika&tag=ashraf0b6-20",
-        "expiresAt": 1779314045723,
+        "expiresAt": 1779324886293,
         "isHot": false,
         "savingNote": "طقم الجرانيت الكوري الأصلي"
     },
@@ -257,7 +257,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Tornado+Vacuum+Cleaner&tag=ashraf0b6-20",
-        "expiresAt": 1779123245723,
+        "expiresAt": 1779098086293,
         "isHot": true,
         "savingNote": "قوة شفط جبارة وتوفير 650 جنيه"
     },
@@ -275,7 +275,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Braun+Silk-epil+9&tag=ashraf0b6-20",
-        "expiresAt": 1779180845723,
+        "expiresAt": 1779213286293,
         "isHot": true,
         "savingNote": "أفضل هدية وخصم حصري"
     },
@@ -293,7 +293,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=Bosch+Hand+Blender+600W&tag=ashraf0b6-20",
-        "expiresAt": 1779098045723,
+        "expiresAt": 1779119686293,
         "isHot": true,
         "savingNote": "خلاط ألماني أصلي بضمان سنة"
     },
@@ -311,7 +311,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=L%27Oreal+Revitalift+Hyaluronic+Acid&tag=ashraf0b6-20",
-        "expiresAt": 1779191645723,
+        "expiresAt": 1779238486293,
         "isHot": false,
         "savingNote": "الأكثر مبيعاً في مصر!"
     },
@@ -329,7 +329,7 @@ const realDeals = [
         "location": "egypt",
         "flag": "🇪🇬",
         "link": "https://www.amazon.eg/s?k=LEGO+Classic+10696&tag=ashraf0b6-20",
-        "expiresAt": 1779324845723,
+        "expiresAt": 1779335686293,
         "isHot": false,
         "savingNote": "هدية مثالية لأي سن!"
     },
@@ -347,7 +347,7 @@ const realDeals = [
         "location": "global",
         "flag": "🌐",
         "link": "https://s.click.aliexpress.com/e/_c4lCeRjl",
-        "expiresAt": 1779227645723,
+        "expiresAt": 1779245686293,
         "isHot": true,
         "savingNote": "خصم 50% على AliExpress!"
     }

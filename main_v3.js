@@ -149,9 +149,11 @@ function renderSkeletons() {
     }
 }
 
-// --- Image Proxy (Fix Amazon/Noon Hotlink Blocking via wsrv.nl) ---
+// --- Image Handling (Bypass CDN Proxy Blocks) ---
 function proxyImg(url) {
     if (!url) return 'https://placehold.co/400x400?text=DealZone';
+    // Amazon, Noon, and AliExpress block wsrv.nl proxy. Use direct URL with referrerpolicy in HTML.
+    if (url.includes('amazon') || url.includes('noon') || url.includes('alicdn')) return url;
     if (url.includes('wsrv.nl') || url.includes('unsplash') || url.includes('placehold')) return url;
     const clean = url.replace(/^https?:\/\//, '');
     return `https://wsrv.nl/?url=${clean}&w=400&h=400&fit=contain&bg=white&q=80`;
@@ -394,32 +396,9 @@ window.goToDeal = function(dealId) {
     window.location.href = targetUrl;
 }
 
-// --- Social Proof Bot Logic ---
+// --- Social Proof Bot Logic (Disabled to prevent annoying spam) ---
 function runSocialProofBot() {
-    const spPopup = document.getElementById('social-proof');
-    const spUser = document.getElementById('sp-user');
-    const spAction = document.getElementById('sp-action');
-    
-    const names = ["أحمد", "سارة", "محمد", "فهد", "ليلى", "عمر", "خالد", "نورة", "عبدالرحمن", "ياسمين", "John", "Sarah", "Mike"];
-    const citiesAr = ["القاهرة", "الرياض", "دبي", "جدة", "الإسكندرية", "الكويت", "الدوحة", "عمان"];
-    const citiesEn = ["Cairo", "Riyadh", "Dubai", "Jeddah", "Alexandria", "Kuwait", "Doha", "Amman"];
-    const actionsAr = ["اشترى لابتوب الآن!", "حصل على كوبون خصم 20$", "اقتنص عرض الفلاش ⚡", "أضاف منتجاً للسلة 🛒"];
-    const actionsEn = ["just bought a laptop!", "unlocked a $20 coupon", "grabbed a flash deal ⚡", "added an item to cart 🛒"];
-
-    setInterval(() => {
-        if (Math.random() > 0.6) {
-            const isAr = currentLang === 'ar';
-            const name = names[Math.floor(Math.random() * names.length)];
-            const city = isAr ? citiesAr[Math.floor(Math.random() * citiesAr.length)] : citiesEn[Math.floor(Math.random() * citiesEn.length)];
-            const action = isAr ? actionsAr[Math.floor(Math.random() * actionsAr.length)] : actionsEn[Math.floor(Math.random() * actionsEn.length)];
-            
-            spUser.innerText = `${name} (${city})`;
-            spAction.innerText = action;
-            
-            spPopup.classList.add('active');
-            setTimeout(() => spPopup.classList.remove('active'), 5000);
-        }
-    }, 12000); // تظهر كل 12 ثانية تقريباً
+    // Disabled for clean professional user experience
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -437,21 +416,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Flash Timer Logic ---
+    // --- Flash Timer Logic (Removed legacy bar) ---
     function startFlashTimer() {
-        let timeLeft = 300; // 5 minutes
-        const timerEl = document.getElementById('flash-timer');
-        if (!timerEl) return;
-        
-        setInterval(() => {
-            if (timeLeft <= 0) timeLeft = 300; 
-            const mins = Math.floor(timeLeft / 60);
-            const secs = timeLeft % 60;
-            timerEl.innerText = `${mins.toString().padStart(2,'0')}:${secs.toString().padStart(2,'0')}`;
-            timeLeft--;
-        }, 1000);
+        // Bar removed
     }
-    startFlashTimer();
 
     // --- Auto-Indexing Pinger (Zero Intervention SEO) ---
     function autoPingIndexing() {
@@ -500,13 +468,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger background ads on specific intervals to maximize profit without annoyance
         if ((clicks + 1) % 2 === 0) {
             console.log("Ad Logic: Optimization triggered.");
-            // The pop-under script handles the actual launch, we just ensure interaction
         }
     };
 
     // Global Click Listener for Background Ads
     document.addEventListener('click', function(e) {
-        // Trigger background ads only once per user interaction session
         if (!sessionStorage.getItem('ad_triggered')) {
             window.trackClick();
             sessionStorage.setItem('ad_triggered', 'true');
@@ -525,50 +491,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickRadar) clickRadar.innerText = displayClicks;
     }
 
-    // --- Social Signal Pinger (Crawler Bait) ---
-    function pingSocialSignals() {
-        const platforms = ['https://www.facebook.com/sharer/sharer.php?u=', 'https://twitter.com/intent/tweet?url=', 'https://www.pinterest.com/pin/create/button/?url='];
-        const siteUrl = 'https://ashrafzaki751-hue.github.io/DealZone/';
-        platforms.forEach(p => {
-            fetch(`${p}${encodeURIComponent(siteUrl)}`, { mode: 'no-cors' }).catch(() => {});
-        });
-        console.log("Social Signals: Crawlers alerted!");
-    }
-
-    // --- Viral Secret Deals Logic ---
-    let currentUnlockId = null;
+    // --- Viral Secret Deals Logic (Cleaned up legacy modal references) ---
     window.handleSecretUnlock = function(id) {
-        currentUnlockId = id;
-        document.getElementById('unlock-modal').classList.add('active');
-        document.getElementById('share-progress').style.width = '0%';
+        showToast("🔒 هذا العرض متاح للأعضاء المميزين فقط.", "info");
     };
-
-    const whatsappBtn = document.getElementById('whatsapp-share-btn');
-    if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', () => {
-            const siteUrl = 'https://ashrafzaki751-hue.github.io/DealZone/';
-            const text = encodeURIComponent("🔥 الحق أقوى عروض السنه! أيفون 15 بـ 99 دولار بس في الخزنة السرية! ادخل افتح العرض من هنا: " + siteUrl);
-            window.open(`https://wa.me/?text=${text}`, '_blank');
-            
-            // محاكاة التقدم
-            let progress = 0;
-            const interval = setInterval(() => {
-                progress += 34;
-                document.getElementById('share-progress').style.width = progress + '%';
-                if (progress >= 100) {
-                    clearInterval(interval);
-                    showToast("🔓 تم فتح العرض بنجاح! استمتع بالتسوق.", "success");
-                    document.getElementById('unlock-modal').classList.remove('active');
-                    // إزالة القفل عن كل الكروت
-                    document.querySelectorAll('.secret-card').forEach(card => {
-                        card.classList.remove('locked');
-                        const overlay = card.querySelector('.lock-overlay');
-                        if (overlay) overlay.style.display = 'none';
-                    });
-                }
-            }, 1000);
-        });
-    }
 
     window.handleNewsletter = function(e) {
         e.preventDefault();
@@ -613,14 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Reward for WhatsApp Share
-    const originalShare = whatsappBtn?.onclick;
-    if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', () => {
-            // Logic for points after successful mock share
-            setTimeout(() => addPoints(50), 2000);
-        });
-    }
+    // Reward for WhatsApp Share (Cleaned up)
 
     // Reward for Newsletter
     const originalNews = window.handleNewsletter;
