@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Allow Ad Crawlers
+User-agent: Mediapartners-Google
+Allow: /
+User-agent: Adsterra
+Allow: /
+User-agent: PropellerAds-Crawler
+Allow: /
+
+Sitemap: https://ashrafzaki751-hue.github.io/DealZone/sitemap.xml
