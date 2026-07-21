@@ -4,7 +4,7 @@
     "title": "Apple iPhone 15 (128GB) - Blue",
     "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&q=80",
     "oldPrice": 51999,
-    "newPrice": 35075,
+    "newPrice": 34110,
     "currency": "EGP",
     "competitorPrice": 48500,
     "store": "Amazon Egypt",
@@ -16,15 +16,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "أرخص سعر في مصر حالياً!",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_tech_2",
     "title": "Samsung Galaxy A55 5G (256GB)",
     "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=80",
     "oldPrice": 22999,
-    "newPrice": 19890,
+    "newPrice": 19430,
     "currency": "EGP",
     "competitorPrice": 21000,
     "store": "Noon Egypt",
@@ -36,15 +36,15 @@
     "expiresHours": 36,
     "isHot": true,
     "savingNote": "توفير 3,500 جنيه!",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_tech_3",
     "title": "Joyroom JR-T03S Pro True Wireless Earbuds",
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
     "oldPrice": 1200,
-    "newPrice": 810,
+    "newPrice": 825,
     "currency": "EGP",
     "competitorPrice": 950,
     "store": "Amazon Egypt",
@@ -56,15 +56,15 @@
     "expiresHours": 24,
     "isHot": false,
     "savingNote": "الأكثر مبيعاً! خصم حقيقي",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_tech_4",
     "title": "Anker 65W GaN Fast Charger (3-Port)",
     "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&q=80",
     "oldPrice": 1800,
-    "newPrice": 1260,
+    "newPrice": 1280,
     "currency": "EGP",
     "competitorPrice": 1600,
     "store": "Amazon Egypt",
@@ -76,15 +76,15 @@
     "expiresHours": 72,
     "isHot": false,
     "savingNote": "شاحن واحد لكل أجهزتك!",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_fashion_1",
     "title": "Nike Air Max 270 Men's Running Shoes",
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
     "oldPrice": 7800,
-    "newPrice": 3805,
+    "newPrice": 3735,
     "currency": "EGP",
     "competitorPrice": 6900,
     "store": "Noon Egypt",
@@ -96,15 +96,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "حذاء رياضي أصلي 100%",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_fashion_2",
     "title": "Casio Edifice Men's Chronograph Watch",
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
     "oldPrice": 6200,
-    "newPrice": 5575,
+    "newPrice": 5715,
     "currency": "EGP",
     "competitorPrice": 5500,
     "store": "Amazon Egypt",
@@ -116,15 +116,15 @@
     "expiresHours": 24,
     "isHot": true,
     "savingNote": "ساعة العمر بخصم جبار",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_fashion_3",
     "title": "Ray-Ban Aviator Classic Sunglasses",
     "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=80",
     "oldPrice": 4200,
-    "newPrice": 2845,
+    "newPrice": 2915,
     "currency": "EGP",
     "competitorPrice": 3600,
     "store": "Noon Egypt",
@@ -136,15 +136,15 @@
     "expiresHours": 72,
     "isHot": false,
     "savingNote": "حماية كاملة من أشعة الشمس",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_fashion_4",
     "title": "Town Team Men's Slim Fit Chino Pants",
     "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=80",
     "oldPrice": 850,
-    "newPrice": 370,
+    "newPrice": 365,
     "currency": "EGP",
     "competitorPrice": 700,
     "store": "Amazon Egypt",
@@ -156,15 +156,15 @@
     "expiresHours": 36,
     "isHot": false,
     "savingNote": "أناقة يومية مريحة",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_women_1",
     "title": "Michael Kors Jet Set Crossbody Bag",
     "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80",
     "oldPrice": 9500,
-    "newPrice": 5315,
+    "newPrice": 5460,
     "currency": "EGP",
     "competitorPrice": 8200,
     "store": "Amazon Egypt",
@@ -176,15 +176,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "حقيبة أصلية بخصم خيالي",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_women_2",
     "title": "Guess Women's Rose Gold Tone Watch",
     "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80",
     "oldPrice": 4800,
-    "newPrice": 2335,
+    "newPrice": 2355,
     "currency": "EGP",
     "competitorPrice": 4100,
     "store": "Noon Egypt",
@@ -196,15 +196,15 @@
     "expiresHours": 24,
     "isHot": true,
     "savingNote": "تصميم عصري وجذاب",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_women_3",
     "title": "Swarovski Crystal Pendant Necklace",
     "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",
     "oldPrice": 5200,
-    "newPrice": 4990,
+    "newPrice": 5110,
     "currency": "EGP",
     "competitorPrice": 4500,
     "store": "Amazon Egypt",
@@ -216,15 +216,15 @@
     "expiresHours": 72,
     "isHot": false,
     "savingNote": "هدية لا تُنسى",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_women_4",
     "title": "Classic Pointed Toe High Heels",
     "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80",
     "oldPrice": 1500,
-    "newPrice": 835,
+    "newPrice": 825,
     "currency": "EGP",
     "competitorPrice": 1200,
     "store": "Amazon Egypt",
@@ -236,15 +236,15 @@
     "expiresHours": 36,
     "isHot": false,
     "savingNote": "أناقة طوال اليوم",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_beauty_1",
     "title": "Braun Silk-epil 9 Epilator for Women",
     "image": "https://images.unsplash.com/photo-1512290900672-1f583322a70d?w=600&q=80",
     "oldPrice": 5500,
-    "newPrice": 5270,
+    "newPrice": 5295,
     "currency": "EGP",
     "competitorPrice": 4800,
     "store": "Amazon Egypt",
@@ -256,15 +256,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "أفضل أداة تجميل وخصم حصري",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_beauty_2",
     "title": "L'Oreal Paris Hyaluronic Acid Serum",
     "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80",
     "oldPrice": 1200,
-    "newPrice": 965,
+    "newPrice": 950,
     "currency": "EGP",
     "competitorPrice": 950,
     "store": "Amazon Egypt",
@@ -276,15 +276,15 @@
     "expiresHours": 24,
     "isHot": true,
     "savingNote": "الأكثر مبيعاً في التجميل",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_beauty_3",
     "title": "Dior Sauvage Eau de Parfum - 100ml",
     "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600&q=80",
     "oldPrice": 8500,
-    "newPrice": 4260,
+    "newPrice": 4220,
     "currency": "EGP",
     "competitorPrice": 7500,
     "store": "Noon Egypt",
@@ -296,8 +296,8 @@
     "expiresHours": 72,
     "isHot": false,
     "savingNote": "عطر الرجال الأكثر جاذبية",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_beauty_4",
@@ -316,15 +316,15 @@
     "expiresHours": 36,
     "isHot": false,
     "savingNote": "ينصح به أطباء الجلدية",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_kids_1",
     "title": "Chicco Bravo Trio Travel System Stroller",
     "image": "https://images.unsplash.com/photo-1517677129300-07b130802f46?w=600&q=80",
     "oldPrice": 18500,
-    "newPrice": 13125,
+    "newPrice": 13080,
     "currency": "EGP",
     "competitorPrice": 16500,
     "store": "Noon Egypt",
@@ -336,15 +336,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "أمان وراحة لطفلك",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_kids_2",
     "title": "LEGO Classic Creative Brick Box (484 Pieces)",
     "image": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=600&q=80",
     "oldPrice": 3500,
-    "newPrice": 2355,
+    "newPrice": 2420,
     "currency": "EGP",
     "competitorPrice": 3200,
     "store": "Amazon Egypt",
@@ -356,15 +356,15 @@
     "expiresHours": 72,
     "isHot": false,
     "savingNote": "هدية مثالية لأي سن!",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_kids_3",
     "title": "Micro Maxi Deluxe LED 3-Wheel Scooter",
     "image": "https://images.unsplash.com/photo-1595054225585-64c483d47225?w=600&q=80",
     "oldPrice": 4200,
-    "newPrice": 3445,
+    "newPrice": 3455,
     "currency": "EGP",
     "competitorPrice": 3800,
     "store": "Amazon Egypt",
@@ -376,15 +376,15 @@
     "expiresHours": 24,
     "isHot": false,
     "savingNote": "عجلات مضيئة وممتعة",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_kids_4",
     "title": "Graco Extend2Fit Convertible Car Seat",
     "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600&q=80",
     "oldPrice": 12000,
-    "newPrice": 9015,
+    "newPrice": 8965,
     "currency": "EGP",
     "competitorPrice": 10500,
     "store": "Amazon Egypt",
@@ -396,15 +396,15 @@
     "expiresHours": 36,
     "isHot": true,
     "savingNote": "حماية فائقة للسيارة",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_books_1",
     "title": "Atomic Habits by James Clear (Arabic Edition)",
     "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80",
     "oldPrice": 350,
-    "newPrice": 195,
+    "newPrice": 190,
     "currency": "EGP",
     "competitorPrice": 280,
     "store": "Amazon Egypt",
@@ -416,8 +416,8 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "الكتاب الأكثر مبيعاً لتطوير الذات",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_books_2",
@@ -436,15 +436,15 @@
     "expiresHours": 24,
     "isHot": false,
     "savingNote": "دليلك للحرية المالية",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_books_3",
     "title": "All-new Kindle Paperwhite (16 GB)",
     "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&q=80",
     "oldPrice": 7500,
-    "newPrice": 3870,
+    "newPrice": 3790,
     "currency": "EGP",
     "competitorPrice": 6500,
     "store": "Amazon Egypt",
@@ -456,15 +456,15 @@
     "expiresHours": 72,
     "isHot": true,
     "savingNote": "مكتبة كاملة في جيبك!",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_books_4",
     "title": "The Psychology of Money (Arabic Edition)",
     "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80",
     "oldPrice": 320,
-    "newPrice": 190,
+    "newPrice": 185,
     "currency": "EGP",
     "competitorPrice": 260,
     "store": "Amazon Egypt",
@@ -476,15 +476,15 @@
     "expiresHours": 36,
     "isHot": false,
     "savingNote": "فهم عميق لإدارة المال",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_home_1",
     "title": "Philips Essential Air Fryer XL (6.2L)",
     "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600&q=80",
     "oldPrice": 8500,
-    "newPrice": 5465,
+    "newPrice": 5310,
     "currency": "EGP",
     "competitorPrice": 7999,
     "store": "Noon Egypt",
@@ -496,15 +496,15 @@
     "expiresHours": 48,
     "isHot": true,
     "savingNote": "وفر 1,115 ج.م عن السوق!",
-    "expiresAt": "2026-07-23T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_home_2",
     "title": "Kenwood Food Processor 800W - 2.1L",
     "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&q=80",
     "oldPrice": 3200,
-    "newPrice": 2435,
+    "newPrice": 2440,
     "currency": "EGP",
     "competitorPrice": 2900,
     "store": "Amazon Egypt",
@@ -516,15 +516,15 @@
     "expiresHours": 72,
     "isHot": true,
     "savingNote": "الخلاط الأكتر طلباً",
-    "expiresAt": "2026-07-24T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-24T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_home_3",
     "title": "Tornado Vacuum Cleaner 2000W",
     "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=600&q=80",
     "oldPrice": 3800,
-    "newPrice": 2710,
+    "newPrice": 2685,
     "currency": "EGP",
     "competitorPrice": 3500,
     "store": "Amazon Egypt",
@@ -536,15 +536,15 @@
     "expiresHours": 24,
     "isHot": false,
     "savingNote": "قوة شفط جبارة",
-    "expiresAt": "2026-07-22T08:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-22T13:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   },
   {
     "id": "real_home_4",
     "title": "Nespresso Essenza Mini Coffee Machine",
     "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80",
     "oldPrice": 7200,
-    "newPrice": 3610,
+    "newPrice": 3685,
     "currency": "EGP",
     "competitorPrice": 6500,
     "store": "Noon Egypt",
@@ -556,7 +556,7 @@
     "expiresHours": 36,
     "isHot": true,
     "savingNote": "قهوة احترافية في بيتك",
-    "expiresAt": "2026-07-22T20:31:38.264Z",
-    "lastScraped": "2026-07-21T08:31:38.264Z"
+    "expiresAt": "2026-07-23T01:54:41.697Z",
+    "lastScraped": "2026-07-21T13:54:41.697Z"
   }
 ]
